@@ -92,7 +92,7 @@
       background: #1a1a1a; color: #fff; border: none; border-radius: 9px;
       font-size: 14px; font-weight: 500; font-family: 'DM Sans', sans-serif;
       cursor: pointer; transition: all 0.2s; letter-spacing: 0.01em;
-    }
+    }h
     .btn:hover { background: #333; }
     .btn:disabled { background: #ccc; cursor: not-allowed; }
     .btn.loading { background: #555; }
@@ -361,7 +361,7 @@
     tagRow.innerHTML = '';
 
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
       const res  = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
